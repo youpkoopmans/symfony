@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% include 'includes/head/head.html.twig' %}
+    </head>
+    <body>
+        <section id="navbar">
+            {% include 'includes/blocks/navbar.html.twig' %}
+        </section>
+        {% block body %}{% endblock %}
+        <section id="footer">
+            {% include 'includes/blocks/footer.html.twig' %}
+        </section>
+        {% include 'includes/assets/scripts.html.twig' %}
+    </body>
+</html>
